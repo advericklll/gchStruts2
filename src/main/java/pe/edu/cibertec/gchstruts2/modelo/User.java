@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pe.edu.cibertec.gch.modelo;
+package pe.edu.cibertec.gchStruts2.modelo;
 
-import pe.edu.cibertec.gch.annotations.Autor;
-import pe.edu.cibertec.gch.annotations.ComplejidadExposicion;
+import pe.edu.cibertec.gchStruts2.annotations.Autor;
+import pe.edu.cibertec.gchStruts2.annotations.ComplejidadExposicion;
 
 /**
  *

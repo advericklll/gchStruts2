@@ -4,14 +4,14 @@
  * and open the template in the editor.
  */
 
-package pe.edu.cibertec.gch.factory;
+package pe.edu.cibertec.gchStruts2.factory;
 
-import pe.edu.cibertec.gch.enums.ServiceTypes;
-import static pe.edu.cibertec.gch.enums.ServiceTypes.REMOTO;
-import static pe.edu.cibertec.gch.enums.ServiceTypes.SERVERBD;
-import pe.edu.cibertec.gch.service.ProfesorService;
-import pe.edu.cibertec.gch.service.ServiceBD;
-import pe.edu.cibertec.gch.service.ServiceRemoto;
+import pe.edu.cibertec.gchStruts2.enums.ServiceTypes;
+import static pe.edu.cibertec.gchStruts2.enums.ServiceTypes.REMOTO;
+import static pe.edu.cibertec.gchStruts2.enums.ServiceTypes.SERVERBD;
+import pe.edu.cibertec.gchStruts2.service.ProfesorService;
+import pe.edu.cibertec.gchStruts2.service.ServiceBD;
+import pe.edu.cibertec.gchStruts2.service.ServiceRemoto;
 /**
  *
  * @author JavaADV

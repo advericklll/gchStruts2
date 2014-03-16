@@ -1,6 +1,6 @@
-package pe.edu.cibertec.gch.modelo;
+package pe.edu.cibertec.gchStruts2.modelo;
 
-import pe.edu.cibertec.gch.annotations.ComplejidadExposicion;
+import pe.edu.cibertec.gchStruts2.annotations.ComplejidadExposicion;
 
 /**
  * Representa a un docente de la institucion.

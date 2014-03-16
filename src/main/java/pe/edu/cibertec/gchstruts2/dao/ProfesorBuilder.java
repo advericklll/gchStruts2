@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package pe.edu.cibertec.gch.dao;
+package pe.edu.cibertec.gchStruts2.dao;
 
-import pe.edu.cibertec.gch.modelo.Profesor;
+import pe.edu.cibertec.gchStruts2.modelo.Profesor;
 
 /**
  *

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package pe.edu.cibertec.gch.annotations;
+package pe.edu.cibertec.gchStruts2.annotations;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
