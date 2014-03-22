@@ -16,19 +16,26 @@ and open the template in the editor.
         <put-attribute name="menu"
                        value="/comun/menu.jsp"/>
         <put-attribute name="cuerpo"
-                       value="/comun/cabecera.jsp"/>
+                       value="/principal.jsp"/>
         <put-attribute name="pie"
-                       value="/comun/cabecera.jsp"/>
+                       value="/comun/pie.jsp"/>
                 
     </definition>
     
-    <definition>
-        
+    <definition name="adminProfesor" extends="principal">
+        <put-attribute name ="cuerpo"
+                        value="/profesor/create.jsp"/>        
     </definition>
     
-    <definition>
-        
+    </definition><definition name="detalleProfesor" extends="principal">
+        <put-attribute name ="cuerpo"
+                        value="/profesor/details.jsp"/>        
     </definition>
+    
+    <definition name="listarProfesor" extends="principal">
+        <put-attribute name ="cuerpo"
+                        value="/profesor/list.jsp"/>        
+    </definition> 
 
 </tiles-definitions>
     
