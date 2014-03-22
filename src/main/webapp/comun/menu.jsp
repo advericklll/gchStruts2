@@ -5,6 +5,7 @@
 --%>
 
 <header>
+    <%@taglib prefix="s" uri="/struts-tags"%>
     <link href="css/dashboard.css" rel="stylesheet">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
@@ -23,6 +24,8 @@
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="logout">Logout</a></li>
+                        <!--<s:a action="logout"/>-->
+                    
                 </ul>
                 <form class="navbar-form navbar-right">
                     <input type="text" class="form-control" placeholder="Search...">
