@@ -10,8 +10,8 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="/images/ico/favicon.ico">
-
-<title>Sistema de Gesti&oacute;n de Carga Horaria - GCH</title>
+<%@taglib prefix="s" uri="/struts-tags"%>
+<title><s:text name="tittle.principal"/></title>
 
 <!-- Bootstrap core CSS -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">

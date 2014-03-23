@@ -16,7 +16,7 @@
         <meta name="author" content="">
         <link rel="shortcut icon" href="images/ico/favicon.ico">
 
-        <title>GCH Login Page</title>
+        <title><s:text name="login.tittle"/></title>
 
         <!-- Bootstrap core CSS -->
         <link href="/gchStruts2/bootstrap/css/bootstrap.min.css" rel="stylesheet">
