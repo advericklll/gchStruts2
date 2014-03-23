@@ -6,7 +6,7 @@
 
 <header>
     <%@taglib prefix="s" uri="/struts-tags"%>
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">

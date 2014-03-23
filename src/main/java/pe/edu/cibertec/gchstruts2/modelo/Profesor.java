@@ -1,12 +1,13 @@
-package pe.edu.cibertec.gchStruts2.modelo;
+package pe.edu.cibertec.gchstruts2.modelo;
 
-import pe.edu.cibertec.gchStruts2.annotations.ComplejidadExposicion;
+import java.io.Serializable;
+import pe.edu.cibertec.gchstruts2.annotations.ComplejidadExposicion;
 
 /**
  * Representa a un docente de la institucion.
  */
 @ComplejidadExposicion(complejidad = "Alta")
-public class Profesor {
+public class Profesor implements Serializable{
 
     private String codigo;
     private String nombres;

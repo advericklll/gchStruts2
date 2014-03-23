@@ -9,12 +9,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="images/ico/favicon.ico">
+<link rel="shortcut icon" href="/images/ico/favicon.ico">
 
 <title>Sistema de Gesti&oacute;n de Carga Horaria - GCH</title>
 
 <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -29,6 +29,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="../js/jquery-2.1.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>

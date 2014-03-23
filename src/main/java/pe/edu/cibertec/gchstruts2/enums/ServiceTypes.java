@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package pe.edu.cibertec.gchStruts2.enums;
+package pe.edu.cibertec.gchstruts2.enums;
 
 /**
  *

@@ -1,7 +1,7 @@
-package pe.edu.cibertec.gchStruts2.dao;
+package pe.edu.cibertec.gchstruts2.dao;
 
 import java.util.List;
-import pe.edu.cibertec.gchStruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.modelo.Profesor;
 
 /**
  * Contrato de operaciones referentes a la entidad de Profesor en la fuente de

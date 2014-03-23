@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package pe.edu.cibertec.gchStruts2.service;
+package pe.edu.cibertec.gchstruts2.service;
 
 import java.util.List;
-import pe.edu.cibertec.gchStruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.modelo.Profesor;
 
 /**
  *

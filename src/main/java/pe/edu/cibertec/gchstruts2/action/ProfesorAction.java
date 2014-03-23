@@ -11,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
-import pe.edu.cibertec.gchStruts2.enums.ServiceTypes;
-import pe.edu.cibertec.gchStruts2.factory.ProfesorFactory;
-import pe.edu.cibertec.gchStruts2.modelo.Profesor;
-import pe.edu.cibertec.gchStruts2.service.ProfesorService;
+import pe.edu.cibertec.gchstruts2.enums.ServiceTypes;
+import pe.edu.cibertec.gchstruts2.factory.ProfesorFactory;
+import pe.edu.cibertec.gchstruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.service.ProfesorService;
 
 /**
  *

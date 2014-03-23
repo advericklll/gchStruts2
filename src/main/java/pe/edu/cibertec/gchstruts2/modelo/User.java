@@ -3,36 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pe.edu.cibertec.gchStruts2.modelo;
+package pe.edu.cibertec.gchstruts2.modelo;
 
-import pe.edu.cibertec.gchStruts2.annotations.Autor;
-import pe.edu.cibertec.gchStruts2.annotations.ComplejidadExposicion;
+import java.io.Serializable;
+import pe.edu.cibertec.gchstruts2.annotations.Autor;
+import pe.edu.cibertec.gchstruts2.annotations.ComplejidadExposicion;
 
 /**
  *
  * @author jvasquezc
  */
-@ComplejidadExposicion(complejidad = "Alta")
-@Autor(codigo= 1, nombre="alumno")
+//@ComplejidadExposicion(complejidad = "Alta")
+//@Autor(codigo= 1, nombre="alumno")
 
-public class User {
+public class User implements Serializable{
 
     private String user;
-    private String pass;
-    private boolean logged = false;   
-
-    public User(String user, String pass) {
-        this.user = user;
-        this.pass = pass;
-    }
-
-    public boolean isLogged() {
-        return logged;
-    }
-
-    public void setLogged(boolean logged) {
-        this.logged = logged;
-    }
+    private String pass;  
     
     public String getUser() {
         return user;

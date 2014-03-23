@@ -14,7 +14,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.Map;
 import org.apache.struts2.dispatcher.SessionMap;
-import pe.edu.cibertec.gchStruts2.modelo.User;
+import pe.edu.cibertec.gchstruts2.modelo.User;
 
 public class LoginAction extends ActionSupport{
     private User usuario;

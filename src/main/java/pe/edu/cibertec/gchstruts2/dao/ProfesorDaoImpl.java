@@ -1,9 +1,9 @@
-package pe.edu.cibertec.gchStruts2.dao;
+package pe.edu.cibertec.gchstruts2.dao;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
-import pe.edu.cibertec.gchStruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.modelo.Profesor;
 
 public class ProfesorDaoImpl implements ProfesorDao {
     
