@@ -23,9 +23,16 @@
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Profile</a></li>
-                    <li><a href="logout">Logout</a></li>
-                        <!--<s:a action="logout"/>-->
-                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Spanish</a></li>                            
+                        </ul>
+                    </li>
+                    <li><s:a action="logout">Logout</s:a></li>
+
+
                 </ul>
                 <form class="navbar-form navbar-right">
                     <input type="text" class="form-control" placeholder="Search...">
@@ -38,11 +45,11 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="listarProfesores">Profesores</a></li>
-                <li><a href="#">Laboratorios</a></li>
-                <li><a href="#">Frecuencias</a></li>
-                <li><a href="#">Programas</a></li>
-                <li><a href="#">Cursos</a></li>
+                <li class="active"><a href="listarProfesores">Professors</a></li>
+                <li><a href="#">Laboratories</a></li>
+                <li><a href="#">Frequencies</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Courses</a></li>
             </ul>            
         </div>
 
