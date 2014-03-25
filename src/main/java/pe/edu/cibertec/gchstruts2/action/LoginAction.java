@@ -10,14 +10,15 @@ package pe.edu.cibertec.gchstruts2.action;
  *
  * @author Lucas
  */
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.Map;
-import org.apache.struts2.dispatcher.SessionMap;
+import org.apache.struts2.interceptor.SessionAware;
 import pe.edu.cibertec.gchstruts2.modelo.User;
 
-public class LoginAction extends ActionSupport{
+public class LoginAction extends ActionSupport implements SessionAware{
     private User usuario;
+    private Map<String, Object> session;
+
 
     public User getUsuario() {
         return usuario;
@@ -31,33 +32,57 @@ public class LoginAction extends ActionSupport{
     public String login() throws Exception {
         
         if(usuario.getUser().equals("admin") && 
-                usuario.getPass().equals("admin")){
-            
-            //obtenemos sesion
-            Map sesion=ActionContext.getContext().getSession();
-            
+                usuario.getPass().equals("admin")){           
             //guardamos objetos en sesion
-            sesion.put("usuario", getUsuario().getUser());            
-            addActionMessage(getText("login.ok"));
-            
+            session.put("usuario", getUsuario().getUser());                
             return SUCCESS;
         }else{
-            addActionError(getText("login.error"));
+            addActionError(getText("login.wrong.credentials"));
             return LOGIN; 
         }
     }
     
     public String logout() throws Exception {       
             //obtenemos sesion
-            Map sesion=ActionContext.getContext().getSession();
-            SessionMap sessionMap=(SessionMap)sesion;
-            sessionMap.invalidate();
+            session.remove("usuario");       
             
             return LOGIN;
     }
     
+    public String home(){
+        return SUCCESS;
+    }
     
     public String inicio(){
         return LOGIN;
-    }    
+    }
+    
+    @Override
+    public void validate() {
+        
+
+        if(getUsuario()!=null){
+            
+            String user= getUsuario().getUser();
+            String pass= getUsuario().getPass();
+            
+            if(user==null || user.equals("")){
+                addFieldError("usuario.user", getText("login.empty.username"));
+            }
+            if(pass==null || pass.equals("")){
+                addFieldError("usuario.pass", getText("login.empty.password"));
+            }       
+            
+        }
+       
+    }
+    
+    
+    public Map<String, Object> getSession() {
+        return session;
+    }
+
+    public void setSession(Map<String, Object> map) {
+        session = map;
+    }
 }

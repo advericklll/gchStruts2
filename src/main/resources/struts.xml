@@ -11,14 +11,25 @@
     <include file="profesor.xml"/>
     <include file="seguridad.xml"/>
 
-    <package name="default" namespace="/" extends="struts-default"> 
+    <package name="default" namespace="/" extends="struts-default">         
+        
         <result-types>
             <result-type name="tiles"
-                          class="org.apache.struts2.views.tiles.TilesResult"/>
+                         class="org.apache.struts2.views.tiles.TilesResult"/>
         </result-types>
+        <interceptors>
+            <interceptor class="pe.edu.cibertec.gchstruts2.interceptors.UserLogged" 
+                         name="userSession">
+            </interceptor>            
+            <interceptor-stack name="sessionStack">
+                <interceptor-ref name="userSession"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
          
         <global-results>
             <result name="GeneralException">/error.jsp</result>
+          <result name="login">/seguridad/login.jsp</result>
         </global-results>
 
         <global-exception-mappings>

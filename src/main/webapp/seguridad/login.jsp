@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <link rel="shortcut icon" href="/gchStruts2/images/ico/favicon.ico">
 
         <title><s:text name="login.tittle"/></title>
 
@@ -37,15 +37,19 @@
 
     <body>
         <s:div cssClass="container">
-            <s:form cssClass="form-signin" role="form" action="login" namespace="/seguridad" >
-                <h2 class="form-signin-heading">Please sign in</h2>
-                <s:textfield name="usuario.user" cssClass="form-control" placeholder="usuario.user"/>
-                <s:password name="usuario.pass" cssClass="form-control" placeholder="usuario.user"/>                         
+            <s:form cssClass="form-signin" role="form">
+                <h2 class="form-signin-heading"><s:text name="login.head"/></h2>
+                <s:textfield name="usuario.user" cssClass="form-control" placeholder="%{getText('login.username')}"/>
+                <s:password name="usuario.pass" cssClass="form-control" placeholder="%{getText('login.password')}"/>                         
                 <label class="checkbox">
-                    <s:checkbox cssClass="checkbox" value="remember-me" name="checkMe"/> Remember Me
+                    <s:checkbox cssClass="checkbox" value="remember-me" name="checkMe"/> <s:text name="login.rememberMe"/>
                 </label>  
-                    <s:submit name="Login" cssClass="btn btn-lg btn-primary btn-block" value="Sign in"/>  
-            </s:form>
+                    <s:submit name="Login" cssClass="btn btn-lg btn-primary btn-block" 
+                              key="login.button" action="login" namespace="/seguridad"/>  
+                    <br/>
+                    <s:actionerror/>
+            </s:form>                
+                
         </s:div><!-- /container -->
 
 

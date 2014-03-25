@@ -3,8 +3,7 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
-<struts>   
-    
+<struts>       
     <package name="seguridad" namespace="/seguridad" extends="default">
         <action name="inicio" 
                  class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
@@ -12,17 +11,22 @@
             <result name="login">/seguridad/login.jsp</result>
         </action>
         
+         <action name="home" 
+                class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
+                method="home">
+            <result type="tiles">principal</result>
+            <interceptor-ref name="sessionStack"/>           
+        </action>
+        
         <action name="login" 
                 class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
                 method="login">
-            <result type="tiles">principal</result>
-            <result name="login">/seguridad/login.jsp</result>
+            <result type="tiles">principal</result>           
             <result name="input">/seguridad/login.jsp</result>
         </action>
          <action name="logout" 
                  class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
-                 method="logout">
-            <result name="login">/seguridad/login.jsp</result>
+                 method="logout">           
         </action>
     </package>
 </struts>

@@ -110,7 +110,7 @@ a.btnhover, .btnhover{
 	padding: 5px 0 0 0;
 }
 #barHeader #logo{
-	background:url(images/login.png);
+	background:url(/gchStruts2/images/login.png);
 	width: 121px;
 	height: 35px;
 	overflow:hidden;

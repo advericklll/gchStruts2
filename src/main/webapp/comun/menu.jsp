@@ -16,26 +16,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp">GCH</a>
+                <s:a cssClass="navbar-brand" action="home" namespace="/seguridad" executeResult="true"><s:text name="nav.systemName"/></s:a>                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="#" ><s:text name="nav.settings"/></a></li>
+                    <li><a href="#"><s:text name="nav.profile"/></a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><s:text name="nav.language"/> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Spanish</a></li>                            
+                            <li><a href="#"><s:text name="nav.language.english"/></a></li>
+                            <li><a href="#"><s:text name="nav.language.spanish"/></a></li>                            
                         </ul>
                     </li>
-                    <li><s:a action="logout">Logout</s:a></li>
+                    <li><s:a action="logout" namespace="/seguridad"><s:text name="nav.logout"/></s:a></li>
 
 
                 </ul>
                 <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control" placeholder="Search...">
+                    <s:textfield cssClass="form-control" name="search" placeholder="%{getText('nav.search')}"/>                    
                 </form>
             </div>
         </div>
@@ -45,11 +45,11 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="listarProfesores">Professors</a></li>
-                <li><a href="#">Laboratories</a></li>
-                <li><a href="#">Frequencies</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Courses</a></li>
+                <li class="active"><s:a action="iniciarProfesor" namespace="/profesor"><s:text name="menu.professors"/></s:a></li>
+                <li><a href="#"><s:text name="menu.laboratories"/></a></li>
+                <li><a href="#"><s:text name="menu.frequencies"/></a></li>
+                <li><a href="#"><s:text name="menu.programs"/></a></li>
+                <li><a href="#"><s:text name="menu.courses"/></a></li>
             </ul>            
         </div>
 
