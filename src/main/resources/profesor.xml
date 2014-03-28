@@ -14,7 +14,8 @@ and open the template in the editor.
                     method="{1}">
             <result type="tiles" name="list">listarProfesor</result>
             <result type="tiles" name="details">detalleProfesor</result>
-            <result type="tiles" name="create">adminProfesor</result>                      
+            <result type="tiles" name="create">adminProfesor</result>  
+            <result type="tiles" name="input">adminProfesor</result>                    
             <interceptor-ref name="sessionStack"/>                        
         </action>       
     </package>

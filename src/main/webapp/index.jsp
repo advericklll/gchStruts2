@@ -5,4 +5,4 @@
 --%>
 
 <%@ taglib prefix="s" uri="/struts-tags" %> 
-<s:action  name="inicio" namespace="/seguridad" executeResult="true"/>
+<s:action  name="inicioLogin" namespace="/seguridad" executeResult="true"/>

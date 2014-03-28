@@ -8,8 +8,12 @@
 <script src="../js/jquery-ui-1.10.4.js"></script>
 <script src="../js/registroScript.js"></script>
 
+<STYLE type="text/css">  
+.errorMessage{color:red; text-align: right;}  
+</STYLE> 
+
 <s:div cssStyle="width: 40%">
-    <s:form method="post" cssClass="form-horizontal" role="form">        
+    <s:form method="post" cssClass="form-horizontal" role="form" validate="true">        
         <fieldset>
             <s:hidden name="profesor.codigo"/>
             <legend><s:text name="professor.form.personal"/></legend>
@@ -17,21 +21,21 @@
                 <label for="profesor.nombres" class="col-sm-4 control-label"><s:text name="professor.form.firstname"/></label>
                 <s:div cssClass="col-sm-8">
                     <s:textfield name="profesor.nombres" cssClass="form-control" id="nombres" 
-                                 maxLength="50" placeholder="%{getText('professor.form.firstname')}" required=""/>                       
+                                 maxLength="50" placeholder="%{getText('professor.form.firstname')}" />                       
                 </s:div>                    
             </s:div> 
             <s:div cssClass="form-group">
                 <label for="profesor.apellidoPaterno" class="col-sm-4 control-label"><s:text name="professor.form.midname"/></label>
                 <s:div cssClass="col-sm-8">
                     <s:textfield name="profesor.apellidoPaterno" cssClass="form-control" id="apellidoPaterno" 
-                                 maxLength="50" placeholder="%{getText('professor.form.midname')}" required=""/>            
+                                 maxLength="50" placeholder="%{getText('professor.form.midname')}" />            
                 </s:div>                    
             </s:div> 
             <s:div cssClass="form-group">
                 <label for="profesor.apellidoMaterno" class="col-sm-4 control-label"><s:text name="professor.form.lastname"/></label>
                 <s:div cssClass="col-sm-8">
                     <s:textfield name="profesor.apellidoMaterno" cssClass="form-control" id="apellidoMaterno" 
-                                 maxLength="50" placeholder="%{getText('professor.form.lastname')}" required=""/>            
+                                 maxLength="50" placeholder="%{getText('professor.form.lastname')}" />            
                 </s:div>                    
             </s:div> 
         </fieldset>
@@ -41,7 +45,7 @@
                 <label for="profesor.direccion" class="col-sm-4 control-label"><s:text name="professor.form.address.complete"/></label>
                 <s:div cssClass="col-sm-8">
                     <s:textfield name="profesor.direccion" cssClass="form-control" id="direccion" 
-                                 maxLength="400" placeholder="%{getText('professor.form.address.complete')}" required=""/>                     
+                                 maxLength="400" placeholder="%{getText('professor.form.address.complete')}" />                     
                 </s:div>                    
             </s:div>
             <s:div cssClass="form-group">
@@ -58,15 +62,14 @@
                 <label for="profesor.telefono1"  class="col-sm-4 control-label"><s:text name="professor.form.phones.phone1"/></label>
                 <s:div cssClass="col-sm-8">
                     <s:textfield name="profesor.telefono1" cssClass="form-control" id="telefono1" 
-                                 maxLength="12" placeholder="%{getText('professor.form.phones.phone1')}"/>          
-
+                                 placeholder="%{getText('professor.form.phones.phone1')}"/>         
                 </s:div>                   
             </s:div>
             <s:div cssClass="form-group">
                 <label for="profesor.telefono2"  class="col-sm-4 control-label"><s:text name="professor.form.phones.phone2"/></label>
                 <s:div cssClass="col-sm-8">
                     <s:textfield name="profesor.telefono2" cssClass="form-control" id="telefono2" 
-                                 maxLength="12" placeholder="%{getText('professor.form.phones.phone2')}"/>                  
+                                 placeholder="%{getText('professor.form.phones.phone2')}"/>                  
                 </s:div>                  
             </s:div>                
         </fieldset>

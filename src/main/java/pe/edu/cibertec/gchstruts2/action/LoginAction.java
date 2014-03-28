@@ -15,6 +15,9 @@ import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
 import pe.edu.cibertec.gchstruts2.modelo.User;
 
+/*
+Login Action: Controlador Seguridad
+*/
 public class LoginAction extends ActionSupport implements SessionAware{
     private User usuario;
     private Map<String, Object> session;
@@ -59,8 +62,6 @@ public class LoginAction extends ActionSupport implements SessionAware{
     
     @Override
     public void validate() {
-        
-
         if(getUsuario()!=null){
             
             String user= getUsuario().getUser();

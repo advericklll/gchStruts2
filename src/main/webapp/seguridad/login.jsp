@@ -45,7 +45,7 @@
                     <s:checkbox cssClass="checkbox" value="remember-me" name="checkMe"/> <s:text name="login.rememberMe"/>
                 </label>  
                     <s:submit name="Login" cssClass="btn btn-lg btn-primary btn-block" 
-                              key="login.button" action="login" namespace="/seguridad"/>  
+                              key="login.button" action="loginLogin" namespace="/seguridad"/>  
                     <br/>
                     <s:actionerror/>
             </s:form>                

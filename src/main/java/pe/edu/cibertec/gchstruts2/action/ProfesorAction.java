@@ -18,6 +18,9 @@ import pe.edu.cibertec.gchstruts2.service.ProfesorService;
  *
  * @author Lucas
  */
+/*
+Profesor Action: Controlador Profesor - CRUD
+*/
 public class ProfesorAction extends ActionSupport implements SessionAware {
 
     private Profesor profesor;

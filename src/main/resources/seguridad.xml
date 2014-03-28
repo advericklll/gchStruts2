@@ -5,28 +5,19 @@
 
 <struts>       
     <package name="seguridad" namespace="/seguridad" extends="default">
-        <action name="inicio" 
+        <action name="*Login" 
                  class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
-                 method="inicio">
+                 method="{1}">
             <result name="login">/seguridad/login.jsp</result>
+            <result type="tiles">principal</result>  
+            <result name="input">/seguridad/login.jsp</result>    
         </action>
         
-         <action name="home" 
+        <action name="home" 
                 class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
                 method="home">
             <result type="tiles">principal</result>
             <interceptor-ref name="sessionStack"/>           
-        </action>
-        
-        <action name="login" 
-                class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
-                method="login">
-            <result type="tiles">principal</result>           
-            <result name="input">/seguridad/login.jsp</result>
-        </action>
-         <action name="logout" 
-                 class="pe.edu.cibertec.gchstruts2.action.LoginAction" 
-                 method="logout">           
-        </action>
+        </action>       
     </package>
 </struts>
