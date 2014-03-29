@@ -4,12 +4,12 @@
     Author     : Lucas
 --%>
 
+<!--
 <footer id="about">
 
     <hgroup>
         <h2>Sistema GCH</h2>
-        <!-- Bloque de pie de pagina -->
-        <!-- Bloque de comentarios de ayuda para el usuario -->
+       
         <p>
             Sistema GCH. El sistema permite la gesti&oacute;n 
             de Profesores, Laboratorios, Frecuencias, Programas y Cursos
@@ -40,5 +40,6 @@
         <span class="pais">Peru</span>
     </address>
 </footer>
+-->
 </div>
 </div>

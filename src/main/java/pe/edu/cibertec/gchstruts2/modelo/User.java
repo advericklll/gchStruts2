@@ -6,15 +6,13 @@
 package pe.edu.cibertec.gchstruts2.modelo;
 
 import java.io.Serializable;
-import pe.edu.cibertec.gchstruts2.annotations.Autor;
-import pe.edu.cibertec.gchstruts2.annotations.ComplejidadExposicion;
 
 /**
  *
- * @author jvasquezc
+ * author Lucas
+ * Representa al usuario de la aplicacion
  */
-//@ComplejidadExposicion(complejidad = "Alta")
-//@Autor(codigo= 1, nombre="alumno")
+
 
 public class User implements Serializable{
 

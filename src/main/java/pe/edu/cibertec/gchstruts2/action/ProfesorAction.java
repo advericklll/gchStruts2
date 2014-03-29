@@ -19,8 +19,8 @@ import pe.edu.cibertec.gchstruts2.service.ProfesorService;
  * @author Lucas
  */
 /*
-Profesor Action: Controlador Profesor - CRUD
-*/
+ Profesor Action: Controlador Profesor - CRUD
+ */
 public class ProfesorAction extends ActionSupport implements SessionAware {
 
     private Profesor profesor;
@@ -42,37 +42,38 @@ public class ProfesorAction extends ActionSupport implements SessionAware {
     public String iniciar() throws Exception {
         // trae los profesores en la fuente de datos    
         ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
-        profesores = serviceProfesorBD.listarTodo();            
+        profesores = serviceProfesorBD.listarTodo();
         return "list";
     }
 
     //nuevo
-    public String registrar() throws Exception {       
+    public String registrar() throws Exception {
         return "create";
     }
 
     //editar
-    public String editar() throws Exception {  
+    public String editar() throws Exception {
         ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
         profesor = serviceProfesorBD.obtenerSegun(codigo);
         return "create";
     }
 
-    public String confirmar() throws Exception {              
-
-        ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);        
-        //actualizar  
-        if(profesor.getCodigo().length()>0){
+    public String confirmar() throws Exception {
+        ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
+        
+        if (null== profesor.getCodigo() || profesor.getCodigo().length() == 0) {
+            serviceProfesorBD.registrar(profesor);
+            //actualizar      
+        } else {
             serviceProfesorBD.actualizar(profesor);
-        //registrar    
-        }else{
-            serviceProfesorBD.registrar(profesor);            
         }
         profesores = serviceProfesorBD.listarTodo();
         return "list";
     }
 
-    public String detalle() throws Exception {                
+    public String detalle() throws Exception {
+        ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
+        profesor = serviceProfesorBD.obtenerSegun(codigo);
         return "details";
     }
 

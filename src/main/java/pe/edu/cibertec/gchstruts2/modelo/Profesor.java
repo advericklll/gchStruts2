@@ -1,12 +1,11 @@
 package pe.edu.cibertec.gchstruts2.modelo;
 
 import java.io.Serializable;
-import pe.edu.cibertec.gchstruts2.annotations.ComplejidadExposicion;
 
 /**
  * Representa a un docente de la institucion.
  */
-@ComplejidadExposicion(complejidad = "Alta")
+
 public class Profesor implements Serializable{
 
     private String codigo;
@@ -129,15 +128,5 @@ public class Profesor implements Serializable{
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
-    }
-
-    @Override
-    public String toString() {
-        String complejidad = this.getClass().getAnnotation(ComplejidadExposicion.class).complejidad();
-        if (complejidad.equals("Alta")) {
-            return "Profesor{" + "codigo=" + codigo + ", nombres=" + nombres + ", apellidoPaterno=" + apellidoPaterno + ", apellidoMaterno=" + apellidoMaterno + '}';
-        } else {
-            return "Profesor{" + "codigo=" + codigo +"}";
-        }
     }
 }

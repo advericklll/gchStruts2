@@ -11,7 +11,7 @@
 <meta name="author" content="">
 <link rel="shortcut icon" href="/gchStruts2/images/ico/favicon.ico">
 <%@taglib prefix="s" uri="/struts-tags"%>
-<title><s:text name="tittle.principal"/></title>
+<title><s:text name="title.principal"/></title>
 
 <!-- Bootstrap core CSS -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">

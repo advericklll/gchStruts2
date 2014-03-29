@@ -9,8 +9,23 @@
 <script src="../js/registroScript.js"></script>
 
 <STYLE type="text/css">  
-.errorMessage{color:red; text-align: right;}  
-</STYLE> 
+    .errorMessage{color:red; text-align: right;}  
+</STYLE>
+
+<s:if test="profesor.codigo==null || profesor.codigo.length()==0">
+    <h1>
+        <s:text name="title.new">
+            <s:param><s:text name="module.professor"/></s:param>
+        </s:text>   
+    </h1>
+</s:if>
+<s:else>
+    <h1>
+        <s:text name="title.update">
+            <s:param><s:text name="module.professor"/></s:param>
+        </s:text>      
+    </h1>
+</s:else>
 
 <s:div cssStyle="width: 40%">
     <s:form method="post" cssClass="form-horizontal" role="form" validate="true">        
