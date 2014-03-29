@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pe.edu.cibertec.gchstruts2.action;
 
 import com.opensymphony.xwork2.ActionSupport;
@@ -14,10 +10,7 @@ import pe.edu.cibertec.gchstruts2.factory.ProfesorFactory;
 import pe.edu.cibertec.gchstruts2.modelo.Profesor;
 import pe.edu.cibertec.gchstruts2.service.ProfesorService;
 
-/**
- *
- * @author Lucas
- */
+
 /*
  Profesor Action: Controlador Profesor - CRUD
  */

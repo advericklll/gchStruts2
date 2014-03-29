@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../css/jquery-ui-1.10.4.css">
 <script src="../js/jquery-ui-1.10.4.js"></script>
 <script src="../js/registroScript.js"></script>
+<script src="../js/scripts.js"></script>
 
 <STYLE type="text/css">  
     .errorMessage{color:red; text-align: right;}  
@@ -120,8 +121,9 @@
             <s:div cssClass="form-group">
                 <label class="col-sm-4 control-label"><s:text name="professor.form.details.sex"/></label>
                 <s:div cssClass="col-sm-8">
+                    
                     <s:div cssClass="radio-inline">                        
-                        <input type="radio" name="profesor.sexo" id="masculino" value="M" />
+                        <input type="radio" name="profesor.sexo" id="masculino" value="M" />                        
                         <s:text name="professor.form.details.sex.male"/>
                     </s:div>
                     <s:div cssClass="radio-inline">                        
