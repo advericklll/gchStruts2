@@ -5,7 +5,7 @@ package pe.edu.cibertec.gchstruts2.service;
 import java.util.List;
 import pe.edu.cibertec.gchstruts2.dao.ProfesorDao;
 import pe.edu.cibertec.gchstruts2.dao.ProfesorDaoImpl;
-import pe.edu.cibertec.gchstruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.entity.Profesor;
 
 
 
@@ -35,7 +35,7 @@ public class ServiceBD extends ProfesorService{
     }
 
     @Override
-    public void eliminarSegun(String codigo) {
+    public void eliminarSegun(Integer codigo) {
         profesorDao.eliminarSegun(codigo);
     }
 
@@ -51,7 +51,7 @@ public class ServiceBD extends ProfesorService{
     }
 
     @Override
-    public Profesor obtenerSegun(String codigo) {
+    public Profesor obtenerSegun(Integer codigo) {
         return profesorDao.obtenerSegun(codigo);
     }
     

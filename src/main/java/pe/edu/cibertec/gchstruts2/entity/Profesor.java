@@ -2,6 +2,7 @@ package pe.edu.cibertec.gchstruts2.entity;
 
 import java.io.Serializable;
 import java.sql.Date;
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

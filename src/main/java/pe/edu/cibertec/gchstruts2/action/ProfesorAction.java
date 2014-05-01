@@ -5,9 +5,12 @@ import com.opensymphony.xwork2.ActionSupport;
 import java.util.List;
 import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
+import pe.edu.cibertec.gchstruts2.dao.ProfesorDao;
+import pe.edu.cibertec.gchstruts2.dao.ProfesorDaoImpl;
+import pe.edu.cibertec.gchstruts2.dao.TelefonosDao;
 import pe.edu.cibertec.gchstruts2.enums.ServiceTypes;
 import pe.edu.cibertec.gchstruts2.factory.ProfesorFactory;
-import pe.edu.cibertec.gchstruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.entity.Profesor;
 import pe.edu.cibertec.gchstruts2.service.ProfesorService;
 
 
@@ -34,14 +37,20 @@ public class ProfesorAction extends ActionSupport implements SessionAware {
 
     public String iniciar() throws Exception {
         // trae los profesores en la fuente de datos    
-        ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
-        profesores = serviceProfesorBD.listarTodo();
-        return "list";
+//        ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
+//        profesores = serviceProfesorBD.listarTodo();
+//        return "list";
+        if(mapaSesion.get("telefonos") == null){
+            TelefonosDao service = new TelefonosDao();
+            mapaSesion.put("telefonos",service.listarTodo());
+        }
+        return SUCCESS;
     }
 
     //nuevo
     public String registrar() throws Exception {
-        return "create";
+//        return "create";
+        return SUCCESS;
     }
 
     //editar
@@ -79,9 +88,12 @@ public class ProfesorAction extends ActionSupport implements SessionAware {
 
     public String buscar() throws Exception {
         // trae los profesores en la fuente de datos    
-        ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
-        profesores = serviceProfesorBD.listarSegun(nombres, apellidoPaterno, apellidoMaterno);
-        return "list";
+//        ProfesorService serviceProfesorBD = ProfesorFactory.create(ServiceTypes.SERVERBD);
+//        profesores = serviceProfesorBD.listarSegun(nombres, apellidoPaterno, apellidoMaterno);
+//        return "list";
+        ProfesorDaoImpl service = new ProfesorDaoImpl();
+       profesor = service.listarTodo();
+       return  SUCCESS;
     }
 
     public void setSession(Map<String, Object> map) {

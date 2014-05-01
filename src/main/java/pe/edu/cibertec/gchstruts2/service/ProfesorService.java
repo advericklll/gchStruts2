@@ -3,7 +3,7 @@
 package pe.edu.cibertec.gchstruts2.service;
 
 import java.util.List;
-import pe.edu.cibertec.gchstruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.entity.Profesor;
 
 public abstract class ProfesorService {
     
@@ -17,9 +17,9 @@ public abstract class ProfesorService {
     
     public abstract void registrar(Profesor profesor);
     public abstract void actualizar(Profesor profesor);
-    public abstract void eliminarSegun(String codigo);
+    public abstract void eliminarSegun(Integer codigo);
     public abstract List<Profesor> listarTodo();
     public abstract List<Profesor> listarSegun(String nombre, String apellidoPaterno, String apellidoMaterno);
-    public abstract Profesor obtenerSegun(String codigo);
+    public abstract Profesor obtenerSegun(Integer codigo);
     
 }

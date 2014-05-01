@@ -3,7 +3,7 @@
 package pe.edu.cibertec.gchstruts2.service;
 
 import java.util.List;
-import pe.edu.cibertec.gchstruts2.modelo.Profesor;
+import pe.edu.cibertec.gchstruts2.entity.Profesor;
 
 
 public class ServiceRemoto extends ProfesorService{
@@ -29,7 +29,7 @@ public class ServiceRemoto extends ProfesorService{
     }
 
     @Override
-    public void eliminarSegun(String codigo) {
+    public void eliminarSegun(Integer codigo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -44,7 +44,7 @@ public class ServiceRemoto extends ProfesorService{
     }
 
     @Override
-    public Profesor obtenerSegun(String codigo) {
+    public Profesor obtenerSegun(Integer codigo) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
