@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/gchStruts2"/>
+
+<Context antiJARLocking = "true" path = "/gchStruts2">
+    <Resourse url = "jdbc:mysql://localhost:3306/dat"
+    driverClassName = "com.mysql.jdbc.Driver"
+    username = "root"
+    password = "root"
+    maxActive = "15"
+    name = "jdbc/dat"
+    type = "javax.sql.DataSource"
+    auth = "Container"/>
+
+</Context>
+    

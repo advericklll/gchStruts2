@@ -1,7 +1,9 @@
 package pe.edu.cibertec.gchstruts2.dao;
 
 import java.util.List;
-import pe.edu.cibertec.gchstruts2.modelo.Profesor;
+import javax.persistence.EntityManager;
+import pe.edu.cibertec.gchstruts2.entity.Profesor;
+import pe.edu.cibertec.gchstruts2.util.PersistenceUtil;
 
 /**
  * Contrato de operaciones referentes a la entidad de Profesor en la fuente de
@@ -10,11 +12,11 @@ import pe.edu.cibertec.gchstruts2.modelo.Profesor;
  */
 public interface ProfesorDao {
     
-    void registrar(Profesor profesor);
+    public void registrar(Profesor profesor);
     void actualizar(Profesor profesor);
-    void eliminarSegun(String codigo);
+    void eliminarSegun(Integer codigo);
     List<Profesor> listarTodo();
     List<Profesor> listarSegun(String nombre, String apellidoPaterno, String apellidoMaterno);
-    Profesor obtenerSegun(String codigo);
+    Profesor obtenerSegun(Integer codigo);
 
 }
